@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: 'AI Predictive Maintenance API',
-    description: 'Built an API to predict Remaining Useful Life (RUL) using CMAPSS datasets, improving maintenance scheduling efficiency with Python and Flask.',
+    description: 'API to predict Remaining Useful Life(RUL) using CMAPSS datasets, improving maintenance scheduling efficiency with Python and Flask.',
     tags: ['Python', 'Flask', 'ML Analysis', 'API'],
     image: 'https://images.pexels.com/photos/442151/pexels-photo-442151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     github: 'https://github.com/aarora80/predictMaintainence.git'
