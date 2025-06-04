@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           >
             Engineering cutting-edge AI @ Intel.<br />
             Researching next-gen ML @ ASU.<br />
-            Building things that solve real problems.
+            Building to solve real problems.
           </motion.p>
           
           <motion.div 
