@@ -18,7 +18,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Multimodal Medical Diagnosis Model',
-    description: 'Leading thesis research to develop a multimodal probabilistic AI model to predict disease progression @ MayoClinic Hospital.',
+    description: 'Thesis research to develop a multimodal probabilistic AI model to predict disease progression @ MayoClinic Hospital.',
     tags: ['PyTorch', 'Probabilistic Circuits', 'Medical AI', 'Research'],
     image: 'https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
