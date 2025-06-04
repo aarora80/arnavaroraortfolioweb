@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'AI Orbitscape',
-    description: 'Leading the next frontier of AI mission planning showcasing globally at the 2025 IAC in Sydney, Australia.',
+    description: 'Founding Engineer for the next frontier of AI mission planning showcasing globally at the 2025 IAC in Sydney, Australia.',
     tags: ['AI', 'Mission Planning', 'Aerospace', 'Startup'],
     image: 'https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     demo: 'https://orbitscape.space'
@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: 'LunarRights',
-    description: 'Co-founded platform for lunar property rights and governance frameworks, selected for presentation at IAC 2025.',
+    description: 'Leading the platform for lunar property rights and governance frameworks, selected for presentation at IAC 2025.',
     tags: ['Space Law', 'Blockchain', 'Governance', 'Startup'],
     image: 'https://images.pexels.com/photos/5439/earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     demo: 'https://lunarights.space'
