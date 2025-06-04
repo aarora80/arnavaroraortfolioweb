@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'AI Orbitscape',
-    description: 'Leading the next frontier of AI mission planning - scaling deep-tech infrastructure - showcasing globally at the 2025 IAC in Sydney, Australia.',
+    description: 'Leading the next frontier of AI mission planning showcasing globally at the 2025 IAC in Sydney, Australia.',
     tags: ['AI', 'Mission Planning', 'Aerospace', 'Startup'],
     image: 'https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     demo: 'https://orbitscape.space'
