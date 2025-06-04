@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
             <div className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-dark-700">
               <h4 className="text-xl font-bold mb-4">Current Availability</h4>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                I'm currently open to internship and research opportunities in AI/ML and Software Engineering.
+                Open to internship and research opportunities in AI/ML and Software Engineering.
               </p>
               <div className="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm font-medium">
                 Available for Opportunities
