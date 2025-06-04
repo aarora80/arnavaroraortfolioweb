@@ -101,7 +101,7 @@ const About: React.FC = () => {
                   <ul className="text-gray-700 dark:text-gray-300 space-y-1">
                     <li>Dean's List</li>
                     <li>New American University Scholarship</li>
-                    <li>Selected for IAC 2025 Presentation</li>
+                    <li>Selected for IAC 2025 Publication</li>
                   </ul>
                 </div>
               </div>
