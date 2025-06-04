@@ -42,7 +42,7 @@ const projects: Project[] = [
     id: 4,
     title: 'AI Orbitscape',
     description: 'Founding Engineer for the next frontier of AI mission planning showcasing globally at IAC 2025.',
-    tags: ['AI', 'TypeScript', 'Aerospace', 'Startup'],
+    tags: ['AI', 'TypeScript', 'React' 'Aerospace', 'Startup'],
     image: 'https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     demo: 'https://orbitscape.space'
   },
