@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'Distributed P2P Network Protocol',
-    description: 'High-performance P2P protocol with Hot Potato routing, custom DHT, and socket-based message passing across nodes.',
+    description: 'High-performance P2P protocol with Hot-Potato routing, custom DHT, socket-based message passing across nodes.',
     tags: ['C', 'Sockets', 'Hash Maps', 'P2P'],
     image: 'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     github: 'https://github.com/aarora80/SocketProject.git'
