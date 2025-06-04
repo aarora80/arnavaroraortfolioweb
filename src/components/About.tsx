@@ -102,6 +102,7 @@ const About: React.FC = () => {
                     <li>Dean's List</li>
                     <li>New American University Scholarship</li>
                     <li>Selected for IAC 2025 Publication</li>
+                    <li>Selected for NeurIPS</li>
                   </ul>
                 </div>
               </div>
