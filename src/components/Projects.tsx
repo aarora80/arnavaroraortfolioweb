@@ -50,7 +50,7 @@ const projects: Project[] = [
     id: 5,
     title: 'LunarRights',
     description: 'Leading the platform for lunar property rights and governance frameworks, selected for presentation at IAC 2025.',
-    tags: ['Space Law', 'Blockchain', 'Governance', 'Startup'],
+    tags: ['Space Law', 'Blockchain', 'Javascript', 'Startup'],
     image: 'https://images.pexels.com/photos/5439/earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     demo: 'https://lunarights.space'
   }
