@@ -47,7 +47,7 @@ const About: React.FC = () => {
             </h3>
             
           <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-            Hey, I’m Arnav — part engineer, part researcher, part musician. I study Computer Science and Statistics at ASU, but really, I just love building cool stuff that solves real problems.
+            Hi! I’m Arnav — Engineer, Founder, and Musician. I study Computer Science and Statistics at ASU, but really, I just love building cool stuff that solves real problems.
           </p>
           
           <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
