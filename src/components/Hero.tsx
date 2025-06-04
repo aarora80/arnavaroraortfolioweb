@@ -52,8 +52,9 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             Engineering cutting-edge AI @ Intel.<br />
-            Researching next-gen ML @ ASU.<br />
-            Building solutions people need. Launching products people love.
+            Researching next-gen ML @ ASU.<br /><br />
+            Building solutions people need. 
+            Launching products people love.
           </motion.p>
           
           <motion.div 
