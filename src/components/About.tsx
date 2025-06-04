@@ -86,7 +86,7 @@ const About: React.FC = () => {
                   <p className="text-gray-700 dark:text-gray-300 mb-1 font-medium">Arizona State University</p>
                   <p className="text-gray-600 dark:text-gray-400">Bachelor's/Accelerated Master's (Spring 2027)</p>
                   <p className="text-gray-600 dark:text-gray-400">Computer Science, Mathematical Statistics</p>
-                  <p className="text-primary-600 dark:text-primary-400 mt-1">GPA: 3.8/4.0</p>
+                  <p className="text-primary-600 dark:text-primary-400 mt-1">GPA: 3.9/4.0</p>
                 </div>
               </div>
             </div>
