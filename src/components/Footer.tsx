@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             </nav>
             
             <p className="text-gray-500 text-xs">
-              480-452-4666 | arnav9920@gmail.com
+              arnav9920@gmail.com
             </p>
           </div>
         </div>
