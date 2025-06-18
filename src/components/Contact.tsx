@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, Linkedin, Send } from 'lucide-react';
+import { Mail, Linkedin, Send } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 
 const Contact: React.FC = () => {
@@ -93,18 +93,6 @@ const Contact: React.FC = () => {
                   <h4 className="text-lg font-semibold mb-1">Email</h4>
                   <a href="mailto:arnav9920@gmail.com" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                     arnav9920@gmail.com
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg mr-4">
-                  <Phone className="text-primary-600 dark:text-primary-400" size={20} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-1">Phone</h4>
-                  <a href="tel:480-452-4666" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    480-452-4666
                   </a>
                 </div>
               </div>
