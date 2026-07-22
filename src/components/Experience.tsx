@@ -8,51 +8,37 @@ interface ExperienceItem {
   id: number;
   company: string;
   position: string;
+  subtitle?: string;
   period: string;
   location: string;
   description: string[];
 }
 
+// Renders plain text with inline [label](url) markdown-style links as clickable anchors
+const renderWithLinks = (text: string) => {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (match) {
+      return (
+        <a
+          key={i}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-600 dark:text-primary-400 underline hover:no-underline"
+        >
+          {match[1]}
+        </a>
+      );
+    }
+    return <React.Fragment key={i}>{part}</React.Fragment>;
+  });
+};
+
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: 'Intel Corporation',
-    position: 'AI/ML Software Engineering Intern',
-    period: 'Feb 2025 - Present',
-    location: 'Santa Clara – Remote',
-    description: [
-      'Enhanced Intel\'s QIRI chatbot with hybrid retrieval (dense + sparse) and expert-matching LLMs, boosting answer speed by 80%.',
-      'Built Holistic AI analytics platform using Python, Kafka, and MongoDB, reducing workforce reporting turnaround by 40%.',
-      'Engineered containerized ETL microservices using Spark and serverless CI/CD (AWS Lambda, API Gateway), cutting deployment time by 54% and boosting analytics uptime.',
-      'Built AI model marketplace for Intel Foundry with semiconductor domain-specific agents, code, and EDA tools—accelerated PLM workflows and knowledge reuse across chip design teams.'
-    ]
-  },
-  {
-    id: 2,
-    company: 'SCAI ML Labs ASU',
-    position: 'ML Research Intern',
-    period: 'April 2024 - Present',
-    location: 'Tempe, Arizona',
-    description: [
-      'Developed scalable pipelines for training probabilistic circuits (interpretable generative models) on multimodal biomedical datasets from Mayo clinic Hospital using ASU\'s high-performance SOL cluster.',
-      'Designed algorithms for data preprocessing, reducing I/O and compute latency by 14% enabling faster experimentation on large-scale graphs.',
-      'Conducted empirical evaluations using PyTorch/Julia, focusing on sample diversity, tractability and inference fidelity.'
-    ]
-  },
-  {
-    id: 3,
-    company: 'State-Street',
-    position: 'Data Science Intern',
-    period: 'August 2024 - December 2024',
-    location: 'Boston – Remote',
-    description: [
-      'Modernized legacy COBOL systems with Java and LLAMA AI, reducing inefficiencies by 33% and optimizing algorithmic performance.',
-      'Built real-time AI dashboards in Power BI with Python and R, improving product service analysis and decision-making.',
-      'Automated CI/CD pipelines with unit testing, boosting deployment speed and reliability by 30%.'
-    ]
-  },
-  {
-    id: 4,
     company: 'Qualitest',
     position: 'SWE/AI-ML Intern',
     period: 'January 2024 – April 2024',
@@ -65,15 +51,51 @@ const experiences: ExperienceItem[] = [
     ]
   },
   {
-    id: 5,
-    company: 'Luminosity Lab',
-    position: 'Undergraduate Technology Consultant',
-    period: 'August 2023 - Present',
+    id: 2,
+    company: 'State Street',
+    position: 'Product Development Intern',
+    period: 'August 2024 - December 2024',
+    location: 'Boston – Remote',
+    description: [
+      'Partnered with engineering to scope and modernize legacy COBOL systems using Java and LLAMA AI, defining requirements that cut processing inefficiencies by 33%.',
+      'Shipped real-time AI dashboards in Power BI to give product and operations teams actionable insight into service performance, speeding up decision-making.',
+      'Drove adoption of automated CI/CD pipelines with unit testing across the team, improving release velocity and reliability by 30%.'
+    ]
+  },
+  {
+    id: 3,
+    company: 'ASU Probabilistic ML Lab (Dr. YooJung Choi)',
+    position: 'Undergraduate ML Researcher',
+    subtitle: 'Contributing Researcher: [NeurIPS Publication Fall 2025](https://yoojungchoi.github.io/publications/LelandNeurIPS25/)',
+    period: 'April 2024 - May 2026',
     location: 'Tempe, Arizona',
     description: [
-      'Partnered with Apple to co-design hardware-software integration strategies, aligning technical architectures with business goals.',
-      'Optimized Zoom\'s virtual learning space architecture, reducing latency by 12% and driving a 20% increase in user engagement.',
-      'Improved payment gateway reliability by 22% through streamlined scripting and architecture enhancements for high-traffic environments.'
+      'Built multimodal ML pipelines in PyTorch to predict survival outcomes for kidney cancer (ccRCC) by fusing medical imaging and genomic data from Mayo Clinic; trained models at scale on ASU\'s HPC cluster across 1M+ patient records for [honors thesis](https://www.linkedin.com/in/arnav-arora-a35027256/overlay/Project/1439617808/treasury/?profileId=ACoAAD8B9wkBWjSBsD2xGLV9WsttsfTWAS_8jK0).',
+      'Implemented importance sampling algorithms for probabilistic circuits and ran experimental evaluations of approximation error on structured benchmark datasets, supporting the lab\'s NeurIPS 2025 paper proving fundamental hardness results for probabilistic inference.'
+    ]
+  },
+  {
+    id: 4,
+    company: 'Intel Corporation',
+    position: 'AI/ML Software Engineering Intern',
+    period: 'Feb 2025 - May 2026',
+    location: 'Santa Clara, California',
+    description: [
+      'Migrated 5+ internal data pipelines, including CW contingent workforce and HSD/Jira data, to Databricks for Intel\'s PLM initiative, unifying siloed sources into a single platform with advanced analytics and ML capability across 3 cross-functional teams.',
+      'Built a CNN-based computer vision classifier for semiconductor defect detection on 10K+ labeled chip images; achieved ~85% classification accuracy and reduced early-stage manual inspection effort by ~25% in internal testing.',
+      'Extended Intel\'s QIRI platform with RAG-based search and automated ticket routing, cutting average lookup time ~70% across 200+ retrieval scenarios.'
+    ]
+  },
+  {
+    id: 5,
+    company: 'Capital One',
+    position: 'AI/ML Product Development Intern (PDIP)',
+    period: 'June 2026 - Present',
+    location: 'Dallas & McLean',
+    description: [
+      'Owned an AI-driven dealer insights product on Capital One\'s AutoNavigator (17K+ dealerships, millions of monthly car shoppers), turning raw session data into CRM-ready signals projected to lift lead conversion ~15-20%.',
+      'Built a Python/SQL tiering framework to prioritize 2M+ daily session events into high-intent leads, solving the platform\'s core scale problem of surfacing insight from noise.',
+      'Identified and fixed a stratum tag gap in mobile session tracking via a self-authored PR, closing a data quality hole upstream of the signal pipeline.'
     ]
   }
 ];
@@ -127,6 +149,9 @@ const Experience: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-bold text-primary-600 dark:text-primary-400">{exp.position}</h3>
                     <h4 className="text-lg font-medium">{exp.company}</h4>
+                    {exp.subtitle && (
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{renderWithLinks(exp.subtitle)}</p>
+                    )}
                   </div>
                   <div className="flex items-center mt-2 md:mt-0 text-gray-600 dark:text-gray-400">
                     <Calendar size={16} className="mr-1" />
@@ -142,7 +167,7 @@ const Experience: React.FC = () => {
                 <ul className="mt-3 space-y-2">
                   {exp.description.map((item, i) => (
                     <li key={i} className="text-gray-700 dark:text-gray-300 pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-primary-500 dark:before:text-primary-400">
-                      {item}
+                      {renderWithLinks(item)}
                     </li>
                   ))}
                 </ul>
