@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <span className="inline-block text-primary-600 dark:text-primary-400 font-medium mb-2">
-              Software Engineer & ML Researcher
+              Product @ Capital One | Prev: SWE @ Intel
             </span>
           </motion.div>
           
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Engineering cutting-edge AI @ Intel.<br />
+            Building products @ Capital One.<br />
             Researching next-gen ML @ ASU.<br /><br />
             Building solutions people need,<br />
             Launching products people love.
