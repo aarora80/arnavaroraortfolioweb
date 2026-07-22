@@ -51,7 +51,7 @@ const About: React.FC = () => {
           </p>
           
           <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-            Right now I’m crafting AI at Intel and diving into generative models for healthcare at ASU’s ML lab. I'm especially into things that mix structure and uncertainty — think probabilistic models, not coin flips.
+            Right now I’m building product at Capital One and diving into generative models for healthcare at ASU’s ML lab. I'm especially into things that mix structure and uncertainty — think probabilistic models, not coin flips.
           </p>
           
           <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
